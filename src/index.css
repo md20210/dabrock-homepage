@@ -9,3 +9,55 @@
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
+/* CV Matcher Screenshot Carousel */
+.cv-matcher-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.cv-matcher-carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #f8fafc;
+  opacity: 0;
+  animation: cvMatcherFade 20s infinite;
+}
+
+.cv-matcher-carousel img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.cv-matcher-carousel img:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.cv-matcher-carousel img:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.cv-matcher-carousel img:nth-child(4) {
+  animation-delay: 12s;
+}
+
+.cv-matcher-carousel img:nth-child(5) {
+  animation-delay: 16s;
+}
+
+@keyframes cvMatcherFade {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  20% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0; }
+}

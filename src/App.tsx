@@ -194,6 +194,17 @@ function App() {
                 </div>
               </div>
 
+              {/* Screenshot Carousel */}
+              <div className="mb-6">
+                <div className="cv-matcher-carousel">
+                  <img src="https://www.dabrock.info/cv-matcher/screenshots/screenshot-1.jpg" alt="CV Matcher Screenshot 1" />
+                  <img src="https://www.dabrock.info/cv-matcher/screenshots/screenshot-2.jpg" alt="CV Matcher Screenshot 2" />
+                  <img src="https://www.dabrock.info/cv-matcher/screenshots/screenshot-3.jpg" alt="CV Matcher Screenshot 3" />
+                  <img src="https://www.dabrock.info/cv-matcher/screenshots/screenshot-4.jpg" alt="CV Matcher Screenshot 4" />
+                  <img src="https://www.dabrock.info/cv-matcher/screenshots/screenshot-5.jpg" alt="CV Matcher Screenshot 5" />
+                </div>
+              </div>
+
               {/* Functional Description */}
               <div className="mb-6">
                 <h4 className="text-xl font-semibold mb-3 text-blue-600">{t('cv_matcher_functional_title')}</h4>
