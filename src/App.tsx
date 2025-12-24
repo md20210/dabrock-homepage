@@ -143,7 +143,7 @@ function App() {
           <div className="max-w-3xl mx-auto text-slate-700 space-y-4 text-lg leading-relaxed">
             <p>{t('about_p1')}</p>
             <p>{t('about_p2')}</p>
-            <p>{t('about_p3')}</p>
+            <p dangerouslySetInnerHTML={{ __html: t('about_p3') }} />
           </div>
         </div>
       </section>
