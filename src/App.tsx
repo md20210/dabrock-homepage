@@ -138,7 +138,8 @@ function App() {
       {/* About Section */}
       <section id="about" className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold mb-8 text-center text-slate-900">{t('about_title')}</h2>
+          <h2 className="text-4xl font-bold mb-4 text-center text-slate-900">{t('about_title')}</h2>
+          <p className="text-xl text-center mb-8 text-blue-600 font-semibold">{t('about_subtitle')}</p>
           <div className="max-w-3xl mx-auto text-slate-700 space-y-4 text-lg leading-relaxed">
             <p>{t('about_p1')}</p>
             <p>{t('about_p2')}</p>
@@ -171,6 +172,15 @@ function App() {
                   >
                     <ExternalLink className="w-4 h-4" />
                     {t('live_demo')}
+                  </a>
+                  <a
+                    href="https://www.dabrock.info/docs/cv-matcher/I18N_DOCUMENTATION.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-slate-500 hover:bg-slate-600 text-white rounded-lg transition-colors shadow-md"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    {t('view_documentation')}
                   </a>
                   <a
                     href="https://github.com/md20210/CV_Matcher"
@@ -286,6 +296,24 @@ function App() {
                     API Docs
                   </a>
                   <a
+                    href="https://www.dabrock.info/docs/backend-architecture.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors shadow-md"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    {t('view_architecture')}
+                  </a>
+                  <a
+                    href="https://www.dabrock.info/docs/general-backend/ARCHITECTURE.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-slate-500 hover:bg-slate-600 text-white rounded-lg transition-colors shadow-md"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    {t('view_documentation')}
+                  </a>
+                  <a
                     href="https://github.com/md20210/general-backend"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -390,6 +418,15 @@ function App() {
                     {t('live_demo')}
                   </a>
                   <a
+                    href="https://www.dabrock.info/docs/homepage/ARCHITECTURE.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-slate-500 hover:bg-slate-600 text-white rounded-lg transition-colors shadow-md"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    {t('view_documentation')}
+                  </a>
+                  <a
                     href="https://github.com/md20210/dabrock-homepage"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -469,13 +506,119 @@ function App() {
               </div>
             </div>
 
-            {/* Other Projects */}
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-bold mb-3 text-blue-600">Audiobook</h3>
-                <p className="text-slate-700">{t('audiobook_desc')}</p>
+            {/* Audiobook Project */}
+            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-start justify-between mb-6 flex-wrap gap-4">
+                <div>
+                  <h3 className="text-3xl font-bold mb-2 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    {t('audiobook_title')}
+                  </h3>
+                  <p className="text-slate-600">{t('audiobook_tagline')}</p>
+                </div>
+                <div className="flex gap-3 flex-wrap">
+                  <a
+                    href={language === 'de' ? 'https://www.dabrock.info/books/Der_Aufstieg_von_Tommy_Pikes.mp3' : 'https://www.dabrock.info/books/Michael_Dabrock_Audiobook.mp3'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-lg transition-colors shadow-md"
+                  >
+                    <span className="text-lg">📖</span>
+                    {t('audiobook_listen_button')}
+                  </a>
+                </div>
               </div>
 
+              {/* Metadata */}
+              <div className="flex gap-6 mb-6 flex-wrap text-sm text-slate-600">
+                <div className="flex items-center gap-2">
+                  <span>💾</span>
+                  <span>{t('audiobook_metadata_size')}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span>⏱️</span>
+                  <span>{t('audiobook_metadata_duration')}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span>🎵</span>
+                  <span>{t('audiobook_metadata_format')}</span>
+                </div>
+              </div>
+
+              {/* Functional Description */}
+              <div className="mb-6">
+                <h4 className="text-xl font-semibold mb-3 text-purple-600">{t('audiobook_functional_title')}</h4>
+                <p className="text-slate-700 mb-4">{t('audiobook_functional_desc')}</p>
+                <ul className="space-y-2 text-slate-700">
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-600 mt-1">•</span>
+                    <span>{t('audiobook_feature_1')}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-600 mt-1">•</span>
+                    <span>{t('audiobook_feature_2')}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-600 mt-1">•</span>
+                    <span>{t('audiobook_feature_3')}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-600 mt-1">•</span>
+                    <span>{t('audiobook_feature_4')}</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Technical Description */}
+              <div>
+                <h4 className="text-xl font-semibold mb-3 text-pink-600">{t('audiobook_technical_title')}</h4>
+                <p className="text-slate-700 mb-4">{t('audiobook_technical_desc')}</p>
+
+                <div className="grid md:grid-cols-4 gap-4">
+                  <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                    <h5 className="font-semibold mb-2 text-purple-700">{t('audiobook_tech_ai')}</h5>
+                    <ul className="text-sm text-slate-600 space-y-1">
+                      <li>• Grok 3</li>
+                      <li>• Claude Sonnet</li>
+                      <li>• ChatGPT-4</li>
+                      <li>• Multi-LLM Pipeline</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                    <h5 className="font-semibold mb-2 text-purple-700">{t('audiobook_tech_voice')}</h5>
+                    <ul className="text-sm text-slate-600 space-y-1">
+                      <li>• ElevenLabs TTS</li>
+                      <li>• Professional Voice</li>
+                      <li>• High Quality Audio</li>
+                      <li>• 192 kbps MP3</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                    <h5 className="font-semibold mb-2 text-purple-700">{t('audiobook_tech_format')}</h5>
+                    <ul className="text-sm text-slate-600 space-y-1">
+                      <li>• MP3 Format</li>
+                      <li>• 364 MB Size</li>
+                      <li>• 6+ Hours Duration</li>
+                      <li>• Bilingual (DE/EN)</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                    <h5 className="font-semibold mb-2 text-purple-700">{t('audiobook_tech_production')}</h5>
+                    <ul className="text-sm text-slate-600 space-y-1">
+                      <li>• 1-Day Production</li>
+                      <li>• AI Collaboration</li>
+                      <li>• Automated Pipeline</li>
+                      <li>• Quality Control</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Other Projects */}
+            <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-md hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-bold mb-3 text-blue-600">TellmeLife</h3>
                 <p className="text-slate-700">{t('tellmelife_desc')}</p>
