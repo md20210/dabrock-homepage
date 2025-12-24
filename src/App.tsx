@@ -340,27 +340,42 @@ function App() {
                 </div>
               </div>
 
+              {/* Functional Description with Screenshot Carousel */}
               <div className="mb-6">
                 <h4 className="text-xl font-semibold mb-3 text-blue-600">{t('general_backend_functional_title')}</h4>
-                <p className="text-slate-700 mb-4">{t('general_backend_functional_desc')}</p>
-                <ul className="space-y-2 text-slate-700">
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-600 mt-1">•</span>
-                    <span>{t('general_backend_feature_1')}</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-600 mt-1">•</span>
-                    <span>{t('general_backend_feature_2')}</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-600 mt-1">•</span>
-                    <span>{t('general_backend_feature_3')}</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-600 mt-1">•</span>
-                    <span>{t('general_backend_feature_4')}</span>
-                  </li>
-                </ul>
+
+                <div className="grid md:grid-cols-2 gap-6 items-start">
+                  {/* Functional Text */}
+                  <div>
+                    <p className="text-slate-700 mb-4">{t('general_backend_functional_desc')}</p>
+                    <ul className="space-y-2 text-slate-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-600 mt-1">•</span>
+                        <span>{t('general_backend_feature_1')}</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-600 mt-1">•</span>
+                        <span>{t('general_backend_feature_2')}</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-600 mt-1">•</span>
+                        <span>{t('general_backend_feature_3')}</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-600 mt-1">•</span>
+                        <span>{t('general_backend_feature_4')}</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Screenshot Carousel */}
+                  <div className="general-backend-carousel">
+                    <img src="https://www.dabrock.info/general-backend/screenshots/screenshot-1.jpg" alt="General Backend Screenshot 1" />
+                    <img src="https://www.dabrock.info/general-backend/screenshots/screenshot-2.jpg" alt="General Backend Screenshot 2" />
+                    <img src="https://www.dabrock.info/general-backend/screenshots/screenshot-3.jpg" alt="General Backend Screenshot 3" />
+                    <img src="https://www.dabrock.info/general-backend/screenshots/screenshot-4.jpg" alt="General Backend Screenshot 4" />
+                  </div>
+                </div>
               </div>
 
               <div>
