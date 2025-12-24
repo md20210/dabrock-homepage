@@ -647,14 +647,8 @@ function App() {
               </div>
             </div>
 
-            {/* Other Projects */}
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-bold mb-3 text-blue-600">TellmeLife</h3>
-                <p className="text-slate-700">{t('tellmelife_desc')}</p>
-              </div>
-
-              <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow">
+            {/* PrivateGxT - Featured */}
+            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow">
                 <div className="flex items-start justify-between mb-6 flex-wrap gap-4">
                   <div>
                     <h3 className="text-3xl font-bold mb-2 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
@@ -736,7 +730,6 @@ function App() {
                   </div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </section>
