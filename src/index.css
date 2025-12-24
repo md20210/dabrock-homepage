@@ -14,12 +14,11 @@
 .cv-matcher-carousel {
   position: relative;
   width: 100%;
-  max-width: 900px;
-  height: 500px;
-  margin: 0 auto;
+  height: 400px;
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  background-color: #f8fafc;
 }
 
 .cv-matcher-carousel img {

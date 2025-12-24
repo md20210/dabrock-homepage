@@ -194,43 +194,47 @@ function App() {
                 </div>
               </div>
 
-              {/* Screenshot Carousel */}
-              <div className="mb-6">
-                <div className="cv-matcher-carousel">
-                  <img src="https://www.dabrock.info/cv-matcher/screenshots/screenshot-1.jpg" alt="CV Matcher Screenshot 1" />
-                  <img src="https://www.dabrock.info/cv-matcher/screenshots/screenshot-2.jpg" alt="CV Matcher Screenshot 2" />
-                  <img src="https://www.dabrock.info/cv-matcher/screenshots/screenshot-3.jpg" alt="CV Matcher Screenshot 3" />
-                  <img src="https://www.dabrock.info/cv-matcher/screenshots/screenshot-4.jpg" alt="CV Matcher Screenshot 4" />
-                  <img src="https://www.dabrock.info/cv-matcher/screenshots/screenshot-5.jpg" alt="CV Matcher Screenshot 5" />
-                </div>
-              </div>
-
-              {/* Functional Description */}
+              {/* Functional Description with Screenshot Carousel */}
               <div className="mb-6">
                 <h4 className="text-xl font-semibold mb-3 text-blue-600">{t('cv_matcher_functional_title')}</h4>
-                <p className="text-slate-700 mb-4">{t('cv_matcher_functional_desc')}</p>
-                <ul className="space-y-2 text-slate-700">
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-600 mt-1">•</span>
-                    <span>{t('cv_matcher_feature_1')}</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-600 mt-1">•</span>
-                    <span>{t('cv_matcher_feature_2')}</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-600 mt-1">•</span>
-                    <span>{t('cv_matcher_feature_3')}</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-600 mt-1">•</span>
-                    <span>{t('cv_matcher_feature_4')}</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-600 mt-1">•</span>
-                    <span>{t('cv_matcher_feature_5')}</span>
-                  </li>
-                </ul>
+
+                <div className="grid md:grid-cols-2 gap-6 items-start">
+                  {/* Functional Text */}
+                  <div>
+                    <p className="text-slate-700 mb-4">{t('cv_matcher_functional_desc')}</p>
+                    <ul className="space-y-2 text-slate-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-600 mt-1">•</span>
+                        <span>{t('cv_matcher_feature_1')}</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-600 mt-1">•</span>
+                        <span>{t('cv_matcher_feature_2')}</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-600 mt-1">•</span>
+                        <span>{t('cv_matcher_feature_3')}</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-600 mt-1">•</span>
+                        <span>{t('cv_matcher_feature_4')}</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-600 mt-1">•</span>
+                        <span>{t('cv_matcher_feature_5')}</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Screenshot Carousel */}
+                  <div className="cv-matcher-carousel">
+                    <img src="https://www.dabrock.info/cv-matcher/screenshots/screenshot-1.jpg" alt="CV Matcher Screenshot 1" />
+                    <img src="https://www.dabrock.info/cv-matcher/screenshots/screenshot-2.jpg" alt="CV Matcher Screenshot 2" />
+                    <img src="https://www.dabrock.info/cv-matcher/screenshots/screenshot-3.jpg" alt="CV Matcher Screenshot 3" />
+                    <img src="https://www.dabrock.info/cv-matcher/screenshots/screenshot-4.jpg" alt="CV Matcher Screenshot 4" />
+                    <img src="https://www.dabrock.info/cv-matcher/screenshots/screenshot-5.jpg" alt="CV Matcher Screenshot 5" />
+                  </div>
+                </div>
               </div>
 
               {/* Technical Description */}
