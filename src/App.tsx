@@ -502,26 +502,6 @@ function App() {
                     </div>
                     <p className="text-slate-600">Multilingual AI voice chatbot with workflow automation</p>
                   </div>
-                  <div className="flex gap-3 flex-wrap">
-                    <a
-                      href="https://www.dabrock.eu/#voicebot"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors shadow-md"
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      View Demo
-                    </a>
-                    <a
-                      href="https://github.com/md20210"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-800 text-white rounded-lg transition-colors shadow-md"
-                    >
-                      <Github className="w-4 h-4" />
-                      GitHub
-                    </a>
-                  </div>
                 </div>
 
                 {/* Call to Action */}
@@ -535,26 +515,7 @@ function App() {
                   >
                     +34 93 694 5855
                   </a>
-                  <p className="text-slate-600 mb-6">Multilingual AI voice chatbot powered by <strong>ElevenLabs</strong>, <strong>ChatGPT</strong>, <strong>Gemini</strong> & <strong>n8n</strong> workflow automation.</p>
-
-                  {/* Language Cards */}
-                  <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto">
-                    <div className="bg-white p-4 rounded-lg border-2 border-green-200 hover:border-green-400 transition-colors">
-                      <div className="text-4xl mb-2">🇬🇧</div>
-                      <h5 className="font-bold text-green-700 mb-1">English</h5>
-                      <p className="text-sm text-slate-600">AI Voice Assistant</p>
-                    </div>
-                    <div className="bg-white p-4 rounded-lg border-2 border-green-200 hover:border-green-400 transition-colors">
-                      <div className="text-4xl mb-2">🇩🇪</div>
-                      <h5 className="font-bold text-green-700 mb-1">Deutsch</h5>
-                      <p className="text-sm text-slate-600">KI Sprachassistent</p>
-                    </div>
-                    <div className="bg-white p-4 rounded-lg border-2 border-green-200 hover:border-green-400 transition-colors">
-                      <div className="text-4xl mb-2">🇪🇸</div>
-                      <h5 className="font-bold text-green-700 mb-1">Español</h5>
-                      <p className="text-sm text-slate-600">Asistente de Voz IA</p>
-                    </div>
-                  </div>
+                  <p className="text-slate-600">Multilingual AI voice chatbot powered by <strong>ElevenLabs</strong>, <strong>ChatGPT</strong>, <strong>Gemini</strong> & <strong>n8n</strong> workflow automation.</p>
                 </div>
 
                 {/* Functional Description */}
