@@ -153,6 +153,19 @@ function App() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center text-slate-900">{t('showcases_title')}</h2>
 
+          {/* Disclaimer */}
+          <div className="bg-red-50 border-2 border-red-500 rounded-xl p-6 mb-12 shadow-lg">
+            <h3 className="text-2xl font-bold mb-4 text-red-700 flex items-center gap-2">
+              <span>⚠️</span>
+              {t('disclaimer_title')}
+            </h3>
+            <div className="text-slate-800 space-y-4 leading-relaxed">
+              <p className="text-base">{t('disclaimer_p1')}</p>
+              <p className="text-base">{t('disclaimer_p2')}</p>
+              <p className="text-base">{t('disclaimer_p3')}</p>
+            </div>
+          </div>
+
           <div className="grid gap-8">
             {/* CV Matcher - Featured */}
             <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow">
@@ -438,15 +451,6 @@ function App() {
                   <p className="text-slate-600">{t('homepage_tagline')}</p>
                 </div>
                 <div className="flex gap-3 flex-wrap">
-                  <a
-                    href="https://www.dabrock.info/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors shadow-md"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    {t('live_demo')}
-                  </a>
                   <a
                     href="https://www.dabrock.info/docs/homepage/ARCHITECTURE.md"
                     target="_blank"
@@ -742,7 +746,7 @@ function App() {
                   </div>
                   <div className="flex gap-3 flex-wrap">
                     <a
-                      href="https://www.dabrock.info/lifechonicle/"
+                      href="https://www.dabrock.info/lifechronicle/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-lg transition-colors shadow-md"
@@ -751,7 +755,7 @@ function App() {
                       {t('lifechonicle_demo_button')}
                     </a>
                     <a
-                      href="https://www.dabrock.info/docs/lifechonicle/ARCHITECTURE.md"
+                      href="https://www.dabrock.info/docs/lifechronicle/ARCHITECTURE.md"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 px-4 py-2 bg-slate-500 hover:bg-slate-600 text-white rounded-lg transition-colors shadow-md"
