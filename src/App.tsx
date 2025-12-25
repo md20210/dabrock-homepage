@@ -304,7 +304,186 @@ function App() {
               </div>
             </div>
 
-            {/* General Backend */}
+            
+{/* PrivateGxT - Featured */}
+            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="flex items-start justify-between mb-6 flex-wrap gap-4">
+                  <div>
+                    <h3 className="text-3xl font-bold mb-2 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
+                      {t('privategxt_title')}
+                    </h3>
+                    <p className="text-slate-600">{t('privategxt_subtitle')}</p>
+                  </div>
+                  <div className="flex gap-3 flex-wrap">
+                    <a
+                      href="https://www.dabrock.info/privategxt/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors shadow-md"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      {t('privategxt_demo_button')}
+                    </a>
+                    <a
+                      href="https://github.com/md20210/PrivateGxT"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-800 text-white rounded-lg transition-colors shadow-md"
+                    >
+                      <Github className="w-4 h-4" />
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+
+                {/* Functional Description */}
+                <div className="mb-6">
+                  <h4 className="text-xl font-semibold mb-3 text-purple-600">{t('privategxt_functional_title')}</h4>
+                  <p className="text-slate-700 mb-4">{t('privategxt_functional_desc')}</p>
+                  <ul className="space-y-2 text-slate-700">
+                    <li className="flex items-start gap-2">
+                      <span className="text-purple-600 mt-1">•</span>
+                      <span>{t('privategxt_feature_1')}</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-purple-600 mt-1">•</span>
+                      <span>{t('privategxt_feature_2')}</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-purple-600 mt-1">•</span>
+                      <span>{t('privategxt_feature_3')}</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-purple-600 mt-1">•</span>
+                      <span>{t('privategxt_feature_4')}</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-purple-600 mt-1">•</span>
+                      <span>{t('privategxt_feature_5')}</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Technical Highlights */}
+                <div>
+                  <h4 className="text-xl font-semibold mb-3 text-pink-600">{t('privategxt_technical_title')}</h4>
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                      <ul className="text-sm text-slate-600 space-y-1">
+                        <li>• {t('privategxt_tech_1')}</li>
+                        <li>• {t('privategxt_tech_2')}</li>
+                      </ul>
+                    </div>
+                    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                      <ul className="text-sm text-slate-600 space-y-1">
+                        <li>• {t('privategxt_tech_3')}</li>
+                        <li>• {t('privategxt_tech_4')}</li>
+                      </ul>
+                    </div>
+                    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                      <ul className="text-sm text-slate-600 space-y-1">
+                        <li>• {t('privategxt_tech_5')}</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            
+{/* LifeChronicle */}
+            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="flex items-start justify-between mb-6 flex-wrap gap-4">
+                  <div>
+                    <h3 className="text-3xl font-bold mb-2 bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">
+                      {t('lifechonicle_title')}
+                    </h3>
+                    <p className="text-slate-600">{t('lifechonicle_subtitle')}</p>
+                  </div>
+                  <div className="flex gap-3 flex-wrap">
+                    <a
+                      href="https://www.dabrock.info/lifechronicle/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-lg transition-colors shadow-md"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      {t('lifechonicle_demo_button')}
+                    </a>
+                    <a
+                      href="https://www.dabrock.info/docs/lifechronicle/ARCHITECTURE.md"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-slate-500 hover:bg-slate-600 text-white rounded-lg transition-colors shadow-md"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      {t('view_documentation')}
+                    </a>
+                    <a
+                      href="https://github.com/md20210/LifeChronicle"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-800 text-white rounded-lg transition-colors shadow-md"
+                    >
+                      <Github className="w-4 h-4" />
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+
+                {/* Functional Description */}
+                <div className="mb-6">
+                  <h4 className="text-xl font-semibold mb-3 text-amber-600">{t('lifechonicle_functional_title')}</h4>
+                  <p className="text-slate-700 mb-4">{t('lifechonicle_functional_desc')}</p>
+                  <ul className="space-y-2 text-slate-700">
+                    <li className="flex items-start gap-2">
+                      <span className="text-amber-600 mt-1">•</span>
+                      <span>{t('lifechonicle_feature_1')}</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-amber-600 mt-1">•</span>
+                      <span>{t('lifechonicle_feature_2')}</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-amber-600 mt-1">•</span>
+                      <span>{t('lifechonicle_feature_3')}</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-amber-600 mt-1">•</span>
+                      <span>{t('lifechonicle_feature_4')}</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-amber-600 mt-1">•</span>
+                      <span>{t('lifechonicle_feature_5')}</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Technical Highlights */}
+                <div>
+                  <h4 className="text-xl font-semibold mb-3 text-orange-600">{t('lifechonicle_technical_title')}</h4>
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                      <ul className="text-sm text-slate-600 space-y-1">
+                        <li>• {t('lifechonicle_tech_1')}</li>
+                        <li>• {t('lifechonicle_tech_2')}</li>
+                      </ul>
+                    </div>
+                    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                      <ul className="text-sm text-slate-600 space-y-1">
+                        <li>• {t('lifechonicle_tech_3')}</li>
+                        <li>• {t('lifechonicle_tech_4')}</li>
+                      </ul>
+                    </div>
+                    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                      <ul className="text-sm text-slate-600 space-y-1">
+                        <li>• {t('lifechonicle_tech_5')}</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+{/* General Backend */}
             <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-start justify-between mb-6 flex-wrap gap-4">
                 <div>
@@ -441,7 +620,8 @@ function App() {
               </div>
             </div>
 
-            {/* dabrock-homepage */}
+            
+{/* dabrock-homepage */}
             <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-start justify-between mb-6 flex-wrap gap-4">
                 <div>
@@ -540,7 +720,8 @@ function App() {
               </div>
             </div>
 
-            {/* Audiobook Project */}
+            
+{/* Audiobook Project */}
             <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-start justify-between mb-6 flex-wrap gap-4">
                 <div>
@@ -651,183 +832,7 @@ function App() {
               </div>
             </div>
 
-            {/* PrivateGxT - Featured */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow">
-                <div className="flex items-start justify-between mb-6 flex-wrap gap-4">
-                  <div>
-                    <h3 className="text-3xl font-bold mb-2 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
-                      {t('privategxt_title')}
-                    </h3>
-                    <p className="text-slate-600">{t('privategxt_subtitle')}</p>
-                  </div>
-                  <div className="flex gap-3 flex-wrap">
-                    <a
-                      href="https://www.dabrock.info/privategxt/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors shadow-md"
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      {t('privategxt_demo_button')}
-                    </a>
-                    <a
-                      href="https://github.com/md20210/PrivateGxT"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-800 text-white rounded-lg transition-colors shadow-md"
-                    >
-                      <Github className="w-4 h-4" />
-                      GitHub
-                    </a>
-                  </div>
-                </div>
-
-                {/* Functional Description */}
-                <div className="mb-6">
-                  <h4 className="text-xl font-semibold mb-3 text-purple-600">{t('privategxt_functional_title')}</h4>
-                  <p className="text-slate-700 mb-4">{t('privategxt_functional_desc')}</p>
-                  <ul className="space-y-2 text-slate-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-purple-600 mt-1">•</span>
-                      <span>{t('privategxt_feature_1')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-purple-600 mt-1">•</span>
-                      <span>{t('privategxt_feature_2')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-purple-600 mt-1">•</span>
-                      <span>{t('privategxt_feature_3')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-purple-600 mt-1">•</span>
-                      <span>{t('privategxt_feature_4')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-purple-600 mt-1">•</span>
-                      <span>{t('privategxt_feature_5')}</span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Technical Highlights */}
-                <div>
-                  <h4 className="text-xl font-semibold mb-3 text-pink-600">{t('privategxt_technical_title')}</h4>
-                  <div className="grid md:grid-cols-3 gap-4">
-                    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-                      <ul className="text-sm text-slate-600 space-y-1">
-                        <li>• {t('privategxt_tech_1')}</li>
-                        <li>• {t('privategxt_tech_2')}</li>
-                      </ul>
-                    </div>
-                    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-                      <ul className="text-sm text-slate-600 space-y-1">
-                        <li>• {t('privategxt_tech_3')}</li>
-                        <li>• {t('privategxt_tech_4')}</li>
-                      </ul>
-                    </div>
-                    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-                      <ul className="text-sm text-slate-600 space-y-1">
-                        <li>• {t('privategxt_tech_5')}</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            {/* LifeChronicle */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow">
-                <div className="flex items-start justify-between mb-6 flex-wrap gap-4">
-                  <div>
-                    <h3 className="text-3xl font-bold mb-2 bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">
-                      {t('lifechonicle_title')}
-                    </h3>
-                    <p className="text-slate-600">{t('lifechonicle_subtitle')}</p>
-                  </div>
-                  <div className="flex gap-3 flex-wrap">
-                    <a
-                      href="https://www.dabrock.info/lifechronicle/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-lg transition-colors shadow-md"
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      {t('lifechonicle_demo_button')}
-                    </a>
-                    <a
-                      href="https://www.dabrock.info/docs/lifechronicle/ARCHITECTURE.md"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-slate-500 hover:bg-slate-600 text-white rounded-lg transition-colors shadow-md"
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      {t('view_documentation')}
-                    </a>
-                    <a
-                      href="https://github.com/md20210/LifeChronicle"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-800 text-white rounded-lg transition-colors shadow-md"
-                    >
-                      <Github className="w-4 h-4" />
-                      GitHub
-                    </a>
-                  </div>
-                </div>
-
-                {/* Functional Description */}
-                <div className="mb-6">
-                  <h4 className="text-xl font-semibold mb-3 text-amber-600">{t('lifechonicle_functional_title')}</h4>
-                  <p className="text-slate-700 mb-4">{t('lifechonicle_functional_desc')}</p>
-                  <ul className="space-y-2 text-slate-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-amber-600 mt-1">•</span>
-                      <span>{t('lifechonicle_feature_1')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-amber-600 mt-1">•</span>
-                      <span>{t('lifechonicle_feature_2')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-amber-600 mt-1">•</span>
-                      <span>{t('lifechonicle_feature_3')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-amber-600 mt-1">•</span>
-                      <span>{t('lifechonicle_feature_4')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-amber-600 mt-1">•</span>
-                      <span>{t('lifechonicle_feature_5')}</span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Technical Highlights */}
-                <div>
-                  <h4 className="text-xl font-semibold mb-3 text-orange-600">{t('lifechonicle_technical_title')}</h4>
-                  <div className="grid md:grid-cols-3 gap-4">
-                    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-                      <ul className="text-sm text-slate-600 space-y-1">
-                        <li>• {t('lifechonicle_tech_1')}</li>
-                        <li>• {t('lifechonicle_tech_2')}</li>
-                      </ul>
-                    </div>
-                    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-                      <ul className="text-sm text-slate-600 space-y-1">
-                        <li>• {t('lifechonicle_tech_3')}</li>
-                        <li>• {t('lifechonicle_tech_4')}</li>
-                      </ul>
-                    </div>
-                    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-                      <ul className="text-sm text-slate-600 space-y-1">
-                        <li>• {t('lifechonicle_tech_5')}</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
+                      </div>
         </div>
       </section>
 
