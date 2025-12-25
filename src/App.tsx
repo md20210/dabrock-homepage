@@ -322,7 +322,7 @@ function App() {
                       className="flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors shadow-md"
                     >
                       <ExternalLink className="w-4 h-4" />
-                      {t('privategxt_demo_button')}
+                      {t('live_demo')}
                     </a>
                     <a
                       href="https://github.com/md20210/PrivateGxT"
@@ -412,7 +412,7 @@ function App() {
                       className="flex items-center gap-2 px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-lg transition-colors shadow-md"
                     >
                       <ExternalLink className="w-4 h-4" />
-                      {t('lifechonicle_demo_button')}
+                      {t('live_demo')}
                     </a>
                     <a
                       href="https://www.dabrock.info/docs/lifechronicle/ARCHITECTURE.md"
