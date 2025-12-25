@@ -394,9 +394,14 @@ function App() {
             <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow">
                 <div className="flex items-start justify-between mb-6 flex-wrap gap-4">
                   <div>
-                    <h3 className="text-3xl font-bold mb-2 bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">
-                      {t('lifechonicle_title')}
-                    </h3>
+                    <div className="flex items-center gap-3 mb-2">
+                      <h3 className="text-3xl font-bold bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">
+                        {t('lifechonicle_title')}
+                      </h3>
+                      <span className="bg-red-100 text-red-700 text-sm font-bold px-3 py-1 rounded-full border-2 border-red-500">
+                        IN CONSTRUCTION
+                      </span>
+                    </div>
                     <p className="text-slate-600">{t('lifechonicle_subtitle')}</p>
                   </div>
                   <div className="flex gap-3 flex-wrap">
@@ -477,6 +482,114 @@ function App() {
                     <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
                       <ul className="text-sm text-slate-600 space-y-1">
                         <li>• {t('lifechonicle_tech_5')}</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            {/* VoiceBot */}
+            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="flex items-start justify-between mb-6 flex-wrap gap-4">
+                  <div>
+                    <div className="flex items-center gap-3 mb-2">
+                      <h3 className="text-3xl font-bold bg-gradient-to-r from-green-600 to-emerald-500 bg-clip-text text-transparent">
+                        AI VoiceBot Assistant
+                      </h3>
+                      <span className="bg-red-100 text-red-700 text-sm font-bold px-3 py-1 rounded-full border-2 border-red-500">
+                        IN TRAINING
+                      </span>
+                    </div>
+                    <p className="text-slate-600">Multilingual AI voice chatbot with workflow automation</p>
+                  </div>
+                  <div className="flex gap-3 flex-wrap">
+                    <a
+                      href="https://www.dabrock.eu/#voicebot"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors shadow-md"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      View Demo
+                    </a>
+                    <a
+                      href="https://github.com/md20210"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-800 text-white rounded-lg transition-colors shadow-md"
+                    >
+                      <Github className="w-4 h-4" />
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+
+                {/* Functional Description */}
+                <div className="mb-6">
+                  <h4 className="text-xl font-semibold mb-3 text-green-600">Functional Overview</h4>
+                  <p className="text-slate-700 mb-4">An AI-powered voice assistant that combines multiple technologies to create natural multilingual conversations. Perfect for customer service, information retrieval, and interactive voice applications.</p>
+                  <ul className="space-y-2 text-slate-700">
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-600 mt-1">•</span>
+                      <span><strong>Multilingual Support:</strong> Seamless conversation in German, English, and Spanish</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-600 mt-1">•</span>
+                      <span><strong>Natural Voice:</strong> High-quality text-to-speech powered by ElevenLabs</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-600 mt-1">•</span>
+                      <span><strong>AI Intelligence:</strong> Context-aware responses using ChatGPT and Gemini</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-600 mt-1">•</span>
+                      <span><strong>Workflow Automation:</strong> Integrated with n8n for complex task automation</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-600 mt-1">•</span>
+                      <span><strong>Real-time Processing:</strong> Low-latency voice recognition and response generation</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Technical Highlights */}
+                <div>
+                  <h4 className="text-xl font-semibold mb-3 text-emerald-600">Technical Stack</h4>
+                  <div className="grid md:grid-cols-4 gap-4">
+                    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                      <h5 className="font-semibold mb-2 text-green-700">Voice AI</h5>
+                      <ul className="text-sm text-slate-600 space-y-1">
+                        <li>• ElevenLabs TTS</li>
+                        <li>• Natural Voices</li>
+                        <li>• Multi-language</li>
+                        <li>• Low Latency</li>
+                      </ul>
+                    </div>
+                    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                      <h5 className="font-semibold mb-2 text-green-700">LLM Integration</h5>
+                      <ul className="text-sm text-slate-600 space-y-1">
+                        <li>• ChatGPT-4</li>
+                        <li>• Google Gemini</li>
+                        <li>• Context Memory</li>
+                        <li>• Prompt Engineering</li>
+                      </ul>
+                    </div>
+                    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                      <h5 className="font-semibold mb-2 text-green-700">Automation</h5>
+                      <ul className="text-sm text-slate-600 space-y-1">
+                        <li>• n8n Workflows</li>
+                        <li>• API Integration</li>
+                        <li>• Task Orchestration</li>
+                        <li>• Event Triggers</li>
+                      </ul>
+                    </div>
+                    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                      <h5 className="font-semibold mb-2 text-green-700">Features</h5>
+                      <ul className="text-sm text-slate-600 space-y-1">
+                        <li>• Voice Commands</li>
+                        <li>• Smart Routing</li>
+                        <li>• Call Logging</li>
+                        <li>• Analytics</li>
                       </ul>
                     </div>
                   </div>
