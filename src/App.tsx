@@ -524,6 +524,39 @@ function App() {
                   </div>
                 </div>
 
+                {/* Call to Action */}
+                <div className="mb-8 text-center p-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border-2 border-green-300">
+                  <div className="text-6xl mb-4">📞</div>
+                  <h4 className="text-2xl font-bold mb-3 text-green-700">Call My AI Voice Assistant</h4>
+                  <a
+                    href="tel:+34936945855"
+                    className="text-3xl font-bold text-green-600 hover:text-green-700 transition-colors inline-block mb-4"
+                    style={{borderBottom: '3px solid #16a34a'}}
+                  >
+                    +34 93 694 5855
+                  </a>
+                  <p className="text-slate-600 mb-6">Multilingual AI voice chatbot powered by <strong>ElevenLabs</strong>, <strong>ChatGPT</strong>, <strong>Gemini</strong> & <strong>n8n</strong> workflow automation.</p>
+
+                  {/* Language Cards */}
+                  <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto">
+                    <div className="bg-white p-4 rounded-lg border-2 border-green-200 hover:border-green-400 transition-colors">
+                      <div className="text-4xl mb-2">🇬🇧</div>
+                      <h5 className="font-bold text-green-700 mb-1">English</h5>
+                      <p className="text-sm text-slate-600">AI Voice Assistant</p>
+                    </div>
+                    <div className="bg-white p-4 rounded-lg border-2 border-green-200 hover:border-green-400 transition-colors">
+                      <div className="text-4xl mb-2">🇩🇪</div>
+                      <h5 className="font-bold text-green-700 mb-1">Deutsch</h5>
+                      <p className="text-sm text-slate-600">KI Sprachassistent</p>
+                    </div>
+                    <div className="bg-white p-4 rounded-lg border-2 border-green-200 hover:border-green-400 transition-colors">
+                      <div className="text-4xl mb-2">🇪🇸</div>
+                      <h5 className="font-bold text-green-700 mb-1">Español</h5>
+                      <p className="text-sm text-slate-600">Asistente de Voz IA</p>
+                    </div>
+                  </div>
+                </div>
+
                 {/* Functional Description */}
                 <div className="mb-6">
                   <h4 className="text-xl font-semibold mb-3 text-green-600">Functional Overview</h4>
