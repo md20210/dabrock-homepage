@@ -394,12 +394,15 @@ function App() {
             <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow">
                 <div className="flex items-start justify-between mb-6 flex-wrap gap-4">
                   <div>
-                    <div className="flex items-center gap-3 mb-2">
+                    <div className="flex items-center gap-3 mb-2 flex-wrap">
                       <h3 className="text-3xl font-bold bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">
                         {t('lifechonicle_title')}
                       </h3>
-                      <span className="bg-red-100 text-red-700 text-sm font-bold px-3 py-1 rounded-full border-2 border-red-500">
-                        IN CONSTRUCTION
+                      <span className="bg-blue-100 text-blue-700 text-sm font-bold px-3 py-1 rounded-full border-2 border-blue-500">
+                        WEB: LIVE
+                      </span>
+                      <span className="bg-yellow-100 text-yellow-700 text-sm font-bold px-3 py-1 rounded-full border-2 border-yellow-500">
+                        MOBILE: IN DEVELOPMENT
                       </span>
                     </div>
                     <p className="text-slate-600">{t('lifechonicle_subtitle')}</p>
@@ -435,6 +438,34 @@ function App() {
                   </div>
                 </div>
 
+                {/* Mobile Download CTA */}
+                <div className="mb-8 text-center p-6 bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl border-2 border-amber-300">
+                  <div className="text-6xl mb-4">📱</div>
+                  <h4 className="text-2xl font-bold mb-3 text-amber-700">{t('lifechonicle_mobile_title')}</h4>
+                  <p className="text-slate-600 mb-4">{t('lifechonicle_mobile_subtitle')}</p>
+                  <div className="flex gap-4 justify-center flex-wrap">
+                    <a
+                      href="https://www.dabrock.info/apps/lifechonicle.apk"
+                      className="flex items-center gap-2 px-6 py-3 bg-amber-600 hover:bg-amber-700 text-white rounded-lg transition-colors shadow-md opacity-50 cursor-not-allowed"
+                      title="Coming Soon - In Development"
+                      onClick={(e) => { e.preventDefault(); alert('Android App wird gerade entwickelt! Verfügbar nach Sprint 4 (ca. 8 Wochen)') }}
+                    >
+                      <span>🤖</span> {t('lifechonicle_mobile_download_android')}
+                    </a>
+                    <a
+                      href="https://testflight.apple.com/join/lifechonicle"
+                      className="flex items-center gap-2 px-6 py-3 bg-amber-600 hover:bg-amber-700 text-white rounded-lg transition-colors shadow-md opacity-50 cursor-not-allowed"
+                      title="Coming Soon - In Development"
+                      onClick={(e) => { e.preventDefault(); alert('iOS App wird gerade entwickelt! Verfügbar nach Sprint 4 (ca. 8 Wochen)') }}
+                    >
+                      <span>🍎</span> {t('lifechonicle_mobile_download_ios')}
+                    </a>
+                  </div>
+                  <p className="mt-4 text-slate-600 text-sm">
+                    Powered by <strong>Capacitor</strong>, <strong>General Backend</strong>, and <strong>n8n</strong> automation.
+                  </p>
+                </div>
+
                 {/* Functional Description */}
                 <div className="mb-6">
                   <h4 className="text-xl font-semibold mb-3 text-amber-600">{t('lifechonicle_functional_title')}</h4>
@@ -460,28 +491,60 @@ function App() {
                       <span className="text-amber-600 mt-1">•</span>
                       <span>{t('lifechonicle_feature_5')}</span>
                     </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-amber-600 mt-1">•</span>
+                      <span><strong>{t('lifechonicle_mobile_feature_speech')}</strong> (Mobile)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-amber-600 mt-1">•</span>
+                      <span><strong>{t('lifechonicle_mobile_feature_camera')}</strong> (Mobile)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-amber-600 mt-1">•</span>
+                      <span><strong>{t('lifechonicle_mobile_feature_offline')}</strong> (Mobile)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-amber-600 mt-1">•</span>
+                      <span><strong>{t('lifechonicle_export_pdf_title')}</strong> - {t('lifechonicle_export_description')}</span>
+                    </li>
                   </ul>
                 </div>
 
                 {/* Technical Highlights */}
                 <div>
                   <h4 className="text-xl font-semibold mb-3 text-orange-600">{t('lifechonicle_technical_title')}</h4>
-                  <div className="grid md:grid-cols-3 gap-4">
+                  <div className="grid md:grid-cols-4 gap-4">
                     <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                      <h5 className="font-semibold mb-2 text-amber-700">Frontend</h5>
                       <ul className="text-sm text-slate-600 space-y-1">
                         <li>• {t('lifechonicle_tech_1')}</li>
                         <li>• {t('lifechonicle_tech_2')}</li>
+                        <li>• Capacitor (Mobile)</li>
                       </ul>
                     </div>
                     <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                      <h5 className="font-semibold mb-2 text-amber-700">Backend</h5>
                       <ul className="text-sm text-slate-600 space-y-1">
                         <li>• {t('lifechonicle_tech_3')}</li>
                         <li>• {t('lifechonicle_tech_4')}</li>
+                        <li>• PostgreSQL</li>
                       </ul>
                     </div>
                     <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                      <h5 className="font-semibold mb-2 text-amber-700">Automation</h5>
+                      <ul className="text-sm text-slate-600 space-y-1">
+                        <li>• n8n Workflows</li>
+                        <li>• LLM Refinement</li>
+                        <li>• PDF/Audio Export</li>
+                      </ul>
+                    </div>
+                    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                      <h5 className="font-semibold mb-2 text-amber-700">Mobile Features</h5>
                       <ul className="text-sm text-slate-600 space-y-1">
                         <li>• {t('lifechonicle_tech_5')}</li>
+                        <li>• Speech-to-Text</li>
+                        <li>• Camera API</li>
+                        <li>• Offline Storage</li>
                       </ul>
                     </div>
                   </div>
