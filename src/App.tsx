@@ -1024,32 +1024,47 @@ function App() {
                 </div>
               </div>
 
-              {/* Functional Description */}
+              {/* Functional Description with Screenshot Carousel */}
               <div className="mb-6">
                 <h4 className="text-xl font-semibold mb-3 text-orange-600">{t('elasticsearch_functional_title')}</h4>
-                <p className="text-slate-700 mb-4">{t('elasticsearch_functional_desc')}</p>
-                <ul className="space-y-2 text-slate-700">
-                  <li className="flex items-start gap-2">
-                    <span className="text-purple-600 mt-1">•</span>
-                    <span>{t('elasticsearch_feature_1')}</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-orange-600 mt-1">•</span>
-                    <span>{t('elasticsearch_feature_2')}</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-purple-600 mt-1">•</span>
-                    <span>{t('elasticsearch_feature_3')}</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-orange-600 mt-1">•</span>
-                    <span>{t('elasticsearch_feature_4')}</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-purple-600 mt-1">•</span>
-                    <span>{t('elasticsearch_feature_5')}</span>
-                  </li>
-                </ul>
+
+                <div className="grid md:grid-cols-2 gap-6 items-start">
+                  {/* Functional Text */}
+                  <div>
+                    <p className="text-slate-700 mb-4">{t('elasticsearch_functional_desc')}</p>
+                    <ul className="space-y-2 text-slate-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-purple-600 mt-1">•</span>
+                        <span>{t('elasticsearch_feature_1')}</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-orange-600 mt-1">•</span>
+                        <span>{t('elasticsearch_feature_2')}</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-purple-600 mt-1">•</span>
+                        <span>{t('elasticsearch_feature_3')}</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-orange-600 mt-1">•</span>
+                        <span>{t('elasticsearch_feature_4')}</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-purple-600 mt-1">•</span>
+                        <span>{t('elasticsearch_feature_5')}</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Screenshot Carousel */}
+                  <div className="elasticsearch-carousel">
+                    <img src="https://www.dabrock.info/elasticsearch/Anwendung1.jpg" alt="Elasticsearch Showcase Screenshot 1" />
+                    <img src="https://www.dabrock.info/elasticsearch/Anwendung2.jpg" alt="Elasticsearch Showcase Screenshot 2" />
+                    <img src="https://www.dabrock.info/elasticsearch/Anwendung3.jpg" alt="Elasticsearch Showcase Screenshot 3" />
+                    <img src="https://www.dabrock.info/elasticsearch/Architektur1.jpg" alt="Elasticsearch Architecture 1" />
+                    <img src="https://www.dabrock.info/elasticsearch/Architektur2.jpg" alt="Elasticsearch Architecture 2" />
+                  </div>
+                </div>
               </div>
 
               {/* Technical Description */}
