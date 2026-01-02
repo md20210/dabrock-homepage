@@ -1002,6 +1002,105 @@ function App() {
               </div>
             </div>
 
+            {/* Elasticsearch Showcase - Featured */}
+            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-start justify-between mb-6 flex-wrap gap-4">
+                <div>
+                  <h3 className="text-3xl font-bold mb-2 bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">
+                    Elasticsearch Showcase
+                  </h3>
+                  <p className="text-slate-600">{t('elasticsearch_tagline')}</p>
+                </div>
+                <div className="flex gap-3 flex-wrap">
+                  <a
+                    href="https://www.dabrock.info/elasticsearch/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-orange-600 hover:from-purple-700 hover:to-orange-700 text-white rounded-lg transition-colors shadow-md"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    {t('live_demo')}
+                  </a>
+                </div>
+              </div>
+
+              {/* Functional Description */}
+              <div className="mb-6">
+                <h4 className="text-xl font-semibold mb-3 text-orange-600">{t('elasticsearch_functional_title')}</h4>
+                <p className="text-slate-700 mb-4">{t('elasticsearch_functional_desc')}</p>
+                <ul className="space-y-2 text-slate-700">
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-600 mt-1">•</span>
+                    <span>{t('elasticsearch_feature_1')}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-orange-600 mt-1">•</span>
+                    <span>{t('elasticsearch_feature_2')}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-600 mt-1">•</span>
+                    <span>{t('elasticsearch_feature_3')}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-orange-600 mt-1">•</span>
+                    <span>{t('elasticsearch_feature_4')}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-600 mt-1">•</span>
+                    <span>{t('elasticsearch_feature_5')}</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Technical Description */}
+              <div>
+                <h4 className="text-xl font-semibold mb-3 text-purple-600">{t('elasticsearch_technical_title')}</h4>
+                <p className="text-slate-700 mb-4">{t('elasticsearch_technical_desc')}</p>
+
+                <div className="grid md:grid-cols-4 gap-4">
+                  <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                    <h5 className="font-semibold mb-2 text-purple-700">{t('elasticsearch_tech_search')}</h5>
+                    <ul className="text-sm text-slate-600 space-y-1">
+                      <li>• pgvector (Pure Vector)</li>
+                      <li>• Elasticsearch (Hybrid)</li>
+                      <li>• BM25 + kNN</li>
+                      <li>• Semantic Search</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                    <h5 className="font-semibold mb-2 text-orange-700">{t('elasticsearch_tech_evaluation')}</h5>
+                    <ul className="text-sm text-slate-600 space-y-1">
+                      <li>• LLM-as-Judge</li>
+                      <li>• Grok API</li>
+                      <li>• Local Llama 3.1</li>
+                      <li>• Real-time Scoring</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                    <h5 className="font-semibold mb-2 text-purple-700">{t('elasticsearch_tech_analytics')}</h5>
+                    <ul className="text-sm text-slate-600 space-y-1">
+                      <li>• React Dashboard</li>
+                      <li>• Recharts</li>
+                      <li>• Win Rate Analysis</li>
+                      <li>• Performance Metrics</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                    <h5 className="font-semibold mb-2 text-orange-700">{t('elasticsearch_tech_infrastructure')}</h5>
+                    <ul className="text-sm text-slate-600 space-y-1">
+                      <li>• FastAPI Backend</li>
+                      <li>• Elasticsearch 7.17</li>
+                      <li>• PostgreSQL + pgvector</li>
+                      <li>• Railway Hosting</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
                       </div>
         </div>
       </section>
