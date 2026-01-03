@@ -402,19 +402,13 @@ function App() {
 {/* LifeChronicle */}
             <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow">
                 <div className="flex items-start justify-between mb-6 flex-wrap gap-4">
-                  <div>
-                    <div className="flex items-center gap-3 mb-2 flex-wrap">
-                      <h3 className="text-3xl font-bold bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">
-                        {t('lifechonicle_title')}
-                      </h3>
-                      <span className="bg-blue-100 text-blue-700 text-sm font-bold px-3 py-1 rounded-full border-2 border-blue-500">
-                        WEB: LIVE
-                      </span>
-                      <span className="bg-yellow-100 text-yellow-700 text-sm font-bold px-3 py-1 rounded-full border-2 border-yellow-500">
-                        MOBILE: IN DEVELOPMENT
-                      </span>
-                    </div>
-                    <p className="text-slate-600">{t('lifechonicle_subtitle')}</p>
+                  <div className="flex items-center gap-3 flex-wrap">
+                    <h3 className="text-3xl font-bold bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">
+                      {t('lifechonicle_title')}
+                    </h3>
+                    <span className="bg-yellow-100 text-yellow-700 text-sm font-bold px-3 py-1 rounded-full border-2 border-yellow-500">
+                      IN DEVELOPMENT
+                    </span>
                   </div>
                   <div className="flex gap-3 flex-wrap">
                     <a
