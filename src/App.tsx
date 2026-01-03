@@ -187,7 +187,7 @@ function App() {
                     {t('live_demo')}
                   </a>
                   <a
-                    href="https://www.dabrock.info/docs/cv-matcher/README.md"
+                    href="https://www.dabrock.info/docs/viewer.html?doc=cv-matcher/README.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-4 py-2 bg-slate-500 hover:bg-slate-600 text-white rounded-lg transition-colors shadow-md"
@@ -325,7 +325,7 @@ function App() {
                       {t('live_demo')}
                     </a>
                     <a
-                      href="https://www.dabrock.info/docs/privategxt/README.md"
+                      href="https://www.dabrock.info/docs/viewer.html?doc=privategxt/README.md"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 px-4 py-2 bg-slate-500 hover:bg-slate-600 text-white rounded-lg transition-colors shadow-md"
@@ -427,7 +427,7 @@ function App() {
                       {t('live_demo')}
                     </a>
                     <a
-                      href="https://www.dabrock.info/docs/lifechonicle/README.md"
+                      href="https://www.dabrock.info/docs/viewer.html?doc=lifechonicle/README.md"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 px-4 py-2 bg-slate-500 hover:bg-slate-600 text-white rounded-lg transition-colors shadow-md"
@@ -691,7 +691,7 @@ function App() {
                     {t('view_architecture')}
                   </a>
                   <a
-                    href="https://www.dabrock.info/docs/general-backend/README.md"
+                    href="https://www.dabrock.info/docs/viewer.html?doc=general-backend/README.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-4 py-2 bg-slate-500 hover:bg-slate-600 text-white rounded-lg transition-colors shadow-md"
@@ -811,7 +811,7 @@ function App() {
                 </div>
                 <div className="flex gap-3 flex-wrap">
                   <a
-                    href="https://www.dabrock.info/docs/dabrock-homepage/README.md"
+                    href="https://www.dabrock.info/docs/viewer.html?doc=dabrock-homepage/README.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-4 py-2 bg-slate-500 hover:bg-slate-600 text-white rounded-lg transition-colors shadow-md"
@@ -1031,7 +1031,7 @@ function App() {
                     {t('live_demo')}
                   </a>
                   <a
-                    href="https://www.dabrock.info/docs/elasticsearch/README.md"
+                    href="https://www.dabrock.info/docs/viewer.html?doc=elasticsearch/README.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-4 py-2 bg-slate-500 hover:bg-slate-600 text-white rounded-lg transition-colors shadow-md"
