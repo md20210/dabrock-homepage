@@ -676,19 +676,10 @@ function App() {
                     href="https://general-backend-production-a734.up.railway.app/docs"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors shadow-md"
+                    className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-lg transition-colors shadow-md"
                   >
                     <ExternalLink className="w-4 h-4" />
                     API Docs
-                  </a>
-                  <a
-                    href="https://www.dabrock.info/docs/backend-architecture.png"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors shadow-md"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    {t('view_architecture')}
                   </a>
                   <a
                     href="https://www.dabrock.info/docs/viewer.html?doc=general-backend/README.md"
